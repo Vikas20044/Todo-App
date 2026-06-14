@@ -10,9 +10,9 @@ db.exec(`
 `);
 
 db.exec(`
-      CREATE TABLE todu(
+      CREATE TABLE todo(
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            userId INTEGER UNIQUE,           
+            userId INTEGER,           
             task TEXT,
             completed BOOLEAN DEFAULT 0,
             FOREIGN KEY(userId) REFERENCES users(userId)

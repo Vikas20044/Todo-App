@@ -24,7 +24,7 @@ app.get('/',(req,res)=>{
 //for authentication
 app.use('/auth',authRoutes);
 // For todo
-app.use('/todoes',todoRoutes);
+app.use('/todos',todoRoutes);
 
 app.listen(PORT , ()=>{
       console.log(`Server has started at ${PORT}`)
