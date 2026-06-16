@@ -5,7 +5,7 @@ const router = express.Router();
 
 // getting all todo of logged user
 router.get('/',(req,res)=>{
-
+      const getTodoes = 
 });
 
 //creating new todo
