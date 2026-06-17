@@ -5,7 +5,9 @@ const router = express.Router();
 
 // getting all todo of logged user
 router.get('/',(req,res)=>{
-      const getTodoes = 
+      const getTodos = db.prepare('SELECT * FROM todo WHERE userId=? ');
+      const todos = getTodos.all(req.userId);
+      
 });
 
 //creating new todo
